@@ -13,7 +13,7 @@ RUN apt-get update && \
 	tar -xvf minisatid-3.11.0-Linux.tar && \
 	mv minisatid-3.11.0-Linux minisatid && \
 	rm minisatid-3.11.0-Linux.tar && \
-	echo $'#! /bin/sh \n\
+	echo '#! /bin/sh \n\
 /tool/minisatid/bin/minisatid-3.11.0 -f=fz "$@"' > /tool/minisatid/fzn-minisatid && \
 	chmod 700 /tool/minisatid/fzn-minisatid
 
